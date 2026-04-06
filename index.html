@@ -16,11 +16,46 @@
 <meta name="twitter:title" content="Queenstown Family &amp; Couples Photographer | Queenstown Memories">
 <meta name="twitter:description" content="Relaxed lifestyle photography for couples and families in Queenstown, NZ. From NZ$600.">
 <link rel="icon" href="./images/cropped-QM-Logo.png">
+<link rel="preload" as="image" href="./images/queenstown-new-zealand-family-vacation-photography-lifestyle-couples-photographer-helicopter-cecil-peak.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 
 <style>
+/* ─── SKIP LINK ──────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--gold);
+  color: var(--ink);
+  padding: 0.6rem 1.2rem;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  z-index: 9999;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 1rem; }
+
+/* ─── FOCUS STATES ───────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+/* ─── REDUCED MOTION ─────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .hero-bg { transform: none !important; }
+}
+
 /* ─── RESET & BASE ───────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -185,6 +220,15 @@ nav.scrolled .nav-brand img {
   align-items: center;
   gap: 1.2rem;
 }
+nav.scrolled .nav-cta .btn-ghost {
+  background: var(--gold);
+  color: var(--ink);
+  border-color: var(--gold);
+}
+nav.scrolled .nav-cta .btn-ghost:hover {
+  background: var(--cream);
+  border-color: var(--cream);
+}
 
 .hamburger {
   display: none;
@@ -205,6 +249,52 @@ nav.scrolled .nav-brand img {
 @media (max-width: 900px) {
   .nav-links, .nav-cta .btn { display: none; }
   .hamburger { display: flex; }
+}
+
+/* Mobile drawer */
+.mobile-drawer {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background: rgba(26,23,20,0.97);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.mobile-drawer.open { display: flex; }
+.mobile-drawer a {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--cream);
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+.mobile-drawer a:hover { color: var(--gold); }
+.mobile-drawer .drawer-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--stone);
+  font-size: 1.8rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.4rem;
+}
+.mobile-drawer .drawer-close:hover { color: var(--cream); }
+.mobile-drawer .drawer-cta {
+  margin-top: 1rem;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: var(--gold);
+  color: var(--ink);
+  padding: 1rem 2.4rem;
 }
 
 /* ─── HERO ───────────────────────────────────────────────────── */
@@ -712,6 +802,67 @@ nav.scrolled .nav-brand img {
   font-weight: 300;
 }
 
+/* ─── TESTIMONIALS ───────────────────────────────────────────── */
+.testimonials {
+  background: var(--cream);
+  padding: 7rem 0;
+  border-top: 1px solid rgba(200,191,176,0.3);
+}
+.testi-header { margin-bottom: 4rem; }
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-bottom: 3rem;
+}
+.testi-card {
+  background: var(--warm);
+  padding: 2.5rem 2.8rem;
+  border-top: 2px solid var(--gold);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.testi-stars {
+  color: var(--gold);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+}
+.testi-quote {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--charcoal);
+  flex: 1;
+}
+.testi-author {
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.testi-footer { text-align: left; }
+.testi-reviews-link {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  border-bottom: 1px solid var(--stone);
+  padding-bottom: 0.15rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+.testi-reviews-link:hover { color: var(--gold); border-color: var(--gold); }
+
+@media (max-width: 1024px) {
+  .testi-grid { grid-template-columns: 1fr; gap: 2px; }
+}
+@media (max-width: 640px) {
+  .testi-card { padding: 2rem 1.8rem; }
+}
+
 /* ─── PROCESS ────────────────────────────────────────────────── */
 .process {
   position: relative;
@@ -1104,6 +1255,7 @@ footer {
 </script>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- ─── NAV ─────────────────────────────────────────────────── -->
 <nav id="main-nav">
@@ -1119,10 +1271,22 @@ footer {
   <div class="nav-cta">
     <a href="#contact" class="btn btn-ghost">Book Now</a>
   </div>
-  <button class="hamburger" id="hamburger" aria-label="Open menu">
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
     <span></span><span></span><span></span>
   </button>
 </nav>
+
+<!-- ─── MOBILE DRAWER ──────────────────────────────────────── -->
+<div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+  <a href="#packages" class="drawer-link">Packages</a>
+  <a href="#gallery" class="drawer-link">Gallery</a>
+  <a href="#why-us" class="drawer-link">Why Us</a>
+  <a href="#process" class="drawer-link">Process</a>
+  <a href="#contact" class="drawer-cta drawer-link">Book Now</a>
+</div>
+
+<main id="main-content">
 
 <!-- ─── HERO ─────────────────────────────────────────────────── -->
 <section class="hero" id="hero">
@@ -1371,6 +1535,36 @@ footer {
   </div>
 </section>
 
+<!-- ─── TESTIMONIALS ──────────────────────────────────────────── -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="testi-header reveal">
+      <div class="label">From our clients</div>
+      <h2 class="section-title">What couples and families<br><em>say about us.</em></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"We had the most incredible experience with the Queenstown Memories team. They made us feel so comfortable and relaxed the whole time. The photos turned out absolutely stunning — we cannot stop looking at them."</p>
+        <div class="testi-author">Krystle &amp; Jeck — Couples Session, Queenstown, 2023</div>
+      </div>
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"James and the team gave us great direction and managed everything with such ease. We barely noticed them half the time. And the photos — simply stunning. Don't walk, run to these guys."</p>
+        <div class="testi-author">Zoe &amp; Stuart — Family Shoot, Queenstown, 2022</div>
+      </div>
+      <div class="testi-card reveal reveal-delay-2">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Tomomi was incredible from the very first message. She knew exactly where to take us, what light to use, and how to get natural smiles from our kids. Best photos we have ever had as a family."</p>
+        <div class="testi-author">Sarah &amp; Family — Family Vacation Shoot, Arrowtown, 2024</div>
+      </div>
+    </div>
+    <div class="testi-footer reveal">
+      <a href="https://share.google/nwa1PYQ0yIrSSO4D3" target="_blank" rel="noopener" class="testi-reviews-link">Read our Google reviews →</a>
+    </div>
+  </div>
+</section>
+
 <!-- ─── PROCESS ───────────────────────────────────────────────── -->
 <section class="process" id="process">
   <div class="process-bg"></div>
@@ -1435,6 +1629,8 @@ footer {
   </div>
 </section>
 
+</main>
+
 <!-- ─── FOOTER ────────────────────────────────────────────────── -->
 <footer>
   <div class="container">
@@ -1465,7 +1661,7 @@ footer {
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2026 Nomado Ltd &nbsp;&middot;&nbsp; Queenstown, New Zealand &nbsp;&middot;&nbsp; <a href="/privacy-policy/" style="color:inherit; border-bottom:1px solid rgba(158,144,128,0.3);">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="/sitemap/" style="color:inherit; border-bottom:1px solid rgba(158,144,128,0.3);">Sitemap</a></p>
+      <p class="footer-copy">&copy; 2026 Nomado Ltd &nbsp;&middot;&nbsp; Queenstown, New Zealand</p>
       <div class="footer-social">
         <a href="https://www.instagram.com/nomadweddings.nz" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.youtube.com/@nomad.wedding" target="_blank" rel="noopener">YouTube</a>
@@ -1482,6 +1678,32 @@ footer {
 
   /* Enable reveal animations only when JS is confirmed running */
   document.body.classList.add('js-loaded');
+
+  /* Mobile drawer */
+  var hamburger = document.getElementById('hamburger');
+  var drawer = document.getElementById('mobileDrawer');
+  var drawerClose = document.getElementById('drawerClose');
+
+  function openDrawer() {
+    drawer.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+  if (hamburger) hamburger.addEventListener('click', openDrawer);
+  if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+  // Close on link click
+  document.querySelectorAll('.drawer-link').forEach(function(link) {
+    link.addEventListener('click', closeDrawer);
+  });
+  // Close on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) closeDrawer();
+  });
 
   /* Nav scroll */
   var nav = document.getElementById('main-nav');
