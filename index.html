@@ -11,11 +11,11 @@
 <meta property="og:title" content="Queenstown Family &amp; Couples Photographer | Queenstown Memories">
 <meta property="og:description" content="Relaxed lifestyle photography for couples and families in Queenstown, NZ. From NZ$600. Full-time local team. Book online.">
 <meta property="og:url" content="https://www.queenstownmemories.co.nz/">
-<meta property="og:image" content="./images/queenstown-new-zealand-family-vacation-photography-lifestyle-couples-photographer-helicopter-cecil-peak.jpg">
+<meta property="og:image" content="https://www.queenstownmemories.co.nz/images/queenstown-new-zealand-family-vacation-photography-lifestyle-couples-photographer-helicopter-cecil-peak.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Queenstown Family &amp; Couples Photographer | Queenstown Memories">
 <meta name="twitter:description" content="Relaxed lifestyle photography for couples and families in Queenstown, NZ. From NZ$600.">
-<link rel="icon" href="./images/cropped-QM-Logo.png">
+<link rel="icon" href="https://www.queenstownmemories.co.nz/images/cropped-QM-Logo.png">
 <link rel="preload" as="image" href="./images/queenstown-new-zealand-family-vacation-photography-lifestyle-couples-photographer-helicopter-cecil-peak.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -528,7 +528,7 @@ nav.scrolled .nav-cta .btn-ghost:hover {
 .packages-header p {
   font-size: 1rem;
   line-height: 1.8;
-  color: var(--taupe);
+  color: var(--charcoal);
   font-weight: 300;
 }
 
@@ -599,7 +599,7 @@ nav.scrolled .nav-cta .btn-ghost:hover {
 .pkg-desc {
   font-size: 0.84rem;
   line-height: 1.8;
-  color: var(--taupe);
+  color: var(--charcoal);
   margin-bottom: 1.8rem;
   font-weight: 300;
   transition: color 0.3s;
@@ -966,7 +966,7 @@ nav.scrolled .nav-cta .btn-ghost:hover {
 .contact-text p {
   font-size: 0.88rem;
   line-height: 1.85;
-  color: var(--taupe);
+  color: var(--charcoal);
   margin-bottom: 1.4rem;
   font-weight: 300;
 }
@@ -999,6 +999,57 @@ nav.scrolled .nav-cta .btn-ghost:hover {
   border: 0;
   width: 100%;
   display: block;
+}
+
+/* ─── FAQ ────────────────────────────────────────────────────── */
+.faq-section {
+  background: var(--cream);
+  padding: 7rem 0;
+  border-top: 1px solid rgba(200,191,176,0.4);
+}
+
+.faq-header {
+  margin-bottom: 4rem;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.faq-item {
+  padding: 2.2rem 2.5rem 2.2rem 0;
+  border-top: 1px solid rgba(200,191,176,0.4);
+}
+.faq-item:nth-child(even) {
+  padding-left: 2.5rem;
+  padding-right: 0;
+  border-left: 1px solid rgba(200,191,176,0.4);
+}
+
+.faq-item h3 {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+.faq-item p {
+  font-size: 0.88rem;
+  line-height: 1.85;
+  color: var(--charcoal);
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .faq-grid { grid-template-columns: 1fr; }
+  .faq-item:nth-child(even) {
+    padding-left: 0;
+    border-left: none;
+  }
 }
 
 /* ─── FOOTER ─────────────────────────────────────────────────── */
@@ -1226,26 +1277,50 @@ footer {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does a Queenstown vacation photoshoot cost?",
+          "name": "How much does a Queenstown photoshoot cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Packages start from NZ$600 for a one-hour couples or family session. The Deer Park Adventure package with permit is NZ$1,200. All packages include professional editing and online gallery delivery within 5 working days."
+            "text": "Packages start from NZ$600 for a one-hour session for couples or families of up to 5. The Tour Groups package is NZ$800 for 2 hours at 2 locations. The Deer Park Adventure package including permit is NZ$1,200. All prices include professional editing and online gallery delivery within 5 working days."
           }
         },
         {
           "@type": "Question",
-          "name": "How long until we receive our photos?",
+          "name": "How many photos will we receive?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "All photos are delivered via private online gallery within 5 working days of your session."
+            "text": "A 1-hour session typically produces 50 to 80 professionally edited images. A 2-hour session produces around 120 to 160. All images are delivered in full resolution via a private online gallery within 5 working days."
           }
         },
         {
           "@type": "Question",
-          "name": "Where in Queenstown do you photograph?",
+          "name": "What happens if the weather is bad?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We photograph throughout Queenstown and surrounds including Lake Wakatipu, Arrowtown, Moke Lake, and Deer Park Heights. We do not currently cover Glenorchy, Wanaka, Tekapo, Mt Cook, or Milford Sound."
+            "text": "For most sessions we can adapt timing or location on the day. Moody overcast light often produces excellent results. For sessions affected by heavy rain, we will work with you to reschedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we choose our location?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We ask for your preferences at booking and make recommendations based on season, light, and group size. Popular spots include Lake Wakatipu, Arrowtown, Moke Lake, and Deer Park Heights."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should we wear to our Queenstown photoshoot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wear what makes you feel like yourselves. Coordinating rather than matching works well for families. Layers are practical in Queenstown's changeable climate. We send a full preparation guide when you book."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are children welcome?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We photograph families regularly and know how to get natural, relaxed images of children. Sessions are unhurried and we build in breaks if needed."
           }
         }
       ]
@@ -1266,7 +1341,7 @@ footer {
     <li><a href="#packages">Packages</a></li>
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="#why-us">Why Us</a></li>
-    <li><a href="#process">Process</a></li>
+    <li><a href="#faq">FAQ</a></li>
   </ul>
   <div class="nav-cta">
     <a href="#contact" class="btn btn-ghost">Book Now</a>
@@ -1319,7 +1394,7 @@ footer {
       </div>
     </div>
   </div>
-  <div class="scroll-hint"><span>Scroll</span></div>
+  <div class="scroll-hint" aria-hidden="true"><span>Scroll</span></div>
 </section>
 
 <!-- ─── MARQUEE ───────────────────────────────────────────────── -->
@@ -1344,7 +1419,7 @@ footer {
         </h2>
         <p>We are a team of professional portrait photographers based in Queenstown, New Zealand. Our passion is guiding people on a journey of love and adventure, crafting <strong>comfortable, fun sessions</strong> that capture the essence of who you are together.</p>
         <p>Unlike freelance visitors, we are here year-round. We know the light, the seasons, and the hidden corners of every location. That local knowledge shows in every frame we deliver.</p>
-        <p>We work under <strong>Nomado Ltd</strong> — the same team behind New Zealand's leading elopement and heli-wedding service. You get that same standard of care, attention, and photography for your vacation.</p>
+        <p>We work under <strong>Nomado Ltd</strong> — the same team behind Nomad Weddings NZ, Queenstown's dedicated elopement and heli-wedding photographers. You get that same standard of care, attention, and photography for your vacation.</p>
         <div style="margin-top:2.5rem;">
           <a href="#contact" class="btn btn-ghost">Book a Session</a>
         </div>
@@ -1385,9 +1460,11 @@ footer {
           <p class="pkg-desc">An unhurried portrait session at one of Queenstown's most scenic lakeside or mountain locations.</p>
           <ul class="pkg-includes">
             <li>1 hour photoshoot</li>
-            <li>1 location</li>
+            <li>1 location of your choice</li>
             <li>Up to 5 people</li>
-            <li>Online gallery, 5 working days</li>
+            <li>Posing guidance throughout</li>
+            <li>50–80 edited images</li>
+            <li>Private online gallery, 5 working days</li>
           </ul>
           <div class="pkg-price-row">
             <div class="pkg-price"><sup>NZ</sup>$600</div>
@@ -1408,9 +1485,11 @@ footer {
           <p class="pkg-desc">Perfect for larger groups, corporate travel parties, or families wanting two contrasting locations in one session.</p>
           <ul class="pkg-includes">
             <li>2 hour photoshoot</li>
-            <li>2 locations</li>
+            <li>2 locations of your choice</li>
             <li>Up to 30 people</li>
-            <li>Online gallery, 5 working days</li>
+            <li>Posing and group direction throughout</li>
+            <li>120–160 edited images</li>
+            <li>Private online gallery, 5 working days</li>
           </ul>
           <div class="pkg-price-row">
             <div class="pkg-price"><sup>NZ</sup>$800</div>
@@ -1433,7 +1512,9 @@ footer {
             <li>Deer Park permit included</li>
             <li>1.5 hour photoshoot</li>
             <li>Up to 5 people</li>
-            <li>Online gallery, 5 working days</li>
+            <li>Posing guidance throughout</li>
+            <li>70–100 edited images</li>
+            <li>Private online gallery, 5 working days</li>
           </ul>
           <div class="pkg-price-row">
             <div class="pkg-price"><sup>NZ</sup>$1,200</div>
@@ -1505,7 +1586,7 @@ footer {
         <div class="label">Why choose us</div>
         <h2 class="section-title">Your vacation deserves<br><em>more than a selfie.</em></h2>
         <p>We are Queenstown locals. Not seasonal workers or visitors with a camera. We have photographed this landscape through every season, every light condition, and every weather window the South Island can throw at us.</p>
-        <p>We work for Nomado Ltd alongside our elopement and heli-wedding team, which means the same level of care that goes into planning a once-in-a-lifetime wedding day goes into planning your vacation session.</p>
+        <p>We work alongside the Nomad Weddings NZ team under Nomado Ltd. The same photographers who plan and shoot heli-weddings at Coromandel Peak and Lake Erskine are the ones guiding your vacation session.</p>
 
         <div class="why-pillars">
           <div class="pillar">
@@ -1594,6 +1675,49 @@ footer {
   </div>
 </section>
 
+<!-- ─── FAQ ────────────────────────────────────────────────────── -->
+<section class="faq-section" id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="faq-header reveal">
+      <div class="label">Common questions</div>
+      <h2 class="section-title" id="faq-heading">Answered<br><em>honestly.</em></h2>
+    </div>
+    <div class="faq-grid">
+
+      <div class="faq-item reveal">
+        <h3>How much does a Queenstown photoshoot cost?</h3>
+        <p>Packages start from NZ$600 for a one-hour session for couples or families of up to 5. The Tour Groups package is NZ$800 for 2 hours at 2 locations for groups up to 30. The Deer Park Adventure package — which includes the private permit — is NZ$1,200. All prices are in New Zealand dollars and include professional editing and online gallery delivery.</p>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1">
+        <h3>How many photos will we receive?</h3>
+        <p>A 1-hour session typically produces 50 to 80 professionally edited images. A 2-hour session produces around 120 to 160. All images are delivered in full resolution via a private online gallery within 5 working days. You can download directly to any device.</p>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-2">
+        <h3>What happens if the weather is bad?</h3>
+        <p>Queenstown weather changes quickly. For most sessions we can adapt timing or location on the day — moody overcast light often produces our best results. For outdoor sessions affected by heavy rain, we will work with you to reschedule. We know the weather windows here better than anyone.</p>
+      </div>
+
+      <div class="faq-item reveal">
+        <h3>Can we choose our location?</h3>
+        <p>Yes. When you book we will ask for your preferences and make recommendations based on the season, light conditions, and your group size. Popular spots include Lake Wakatipu, Arrowtown's autumn laneways, Moke Lake, and Deer Park Heights. We will guide you toward the best option for your day.</p>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1">
+        <h3>What should we wear?</h3>
+        <p>Wear what makes you feel like yourselves. Coordinating rather than matching works well for families. Avoid very bright logos or patterns that date quickly. Layers are practical in Queenstown's changeable climate. We send a full preparation guide when you book, covering outfits, timing, and what to expect.</p>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-2">
+        <h3>Are children welcome?</h3>
+        <p>Absolutely. We photograph families regularly and know how to get natural, relaxed images of kids without forcing it. Sessions are unhurried. If your children need a break we build it in. The result is always better when everyone is comfortable.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ─── CONTACT ───────────────────────────────────────────────── -->
 <section class="contact" id="contact">
   <div class="contact-inner">
@@ -1608,7 +1732,7 @@ footer {
         <p>Tell us your date, your group size, and any locations you have in mind. We will confirm availability and get you booked in within 24 hours.</p>
         <p style="color:var(--gold); font-size:0.78rem; letter-spacing:0.04em; font-weight:400;">Peak season (October to April) books out early. Secure your date as soon as possible.</p>
         <div class="contact-details" style="margin-top:1.8rem;">
-          <a href="mailto:team@nomad.wedding">team@nomad.wedding</a>
+          <a href="/cdn-cgi/l/email-protection#b3c7d6d2def3dddcded2d79dc4d6d7d7daddd4"><span class="__cf_email__" data-cfemail="275342464a6749484a464309504243434e4940">[email&#160;protected]</span></a>
           <a href="https://wa.me/642102657122" target="_blank" rel="noopener">WhatsApp: +64 21 026 57122</a>
           <span>Queenstown, New Zealand</span>
         </div>
@@ -1622,7 +1746,7 @@ footer {
           loading="lazy"
           title="Booking enquiry form">
         </iframe>
-        <script type="text/javascript" data-iframe-id="sn-form-qm"
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" data-iframe-id="sn-form-qm"
           src="https://app.studioninja.co/client-assets/form-render/assets/scripts/iframeResizer.js"></script>
       </div>
     </div>
@@ -1654,7 +1778,7 @@ footer {
         <h4>Get in Touch</h4>
         <ul>
           <li><a href="https://wa.me/642102657122" target="_blank" rel="noopener">WhatsApp: +64 21 026 57122</a></li>
-          <li><a href="mailto:team@nomad.wedding">team@nomad.wedding</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#2b5f4e4a466b4544464a4f055c4e4f4f42454c"><span class="__cf_email__" data-cfemail="bacedfdbd7fad4d5d7dbde94cddfdeded3d4dd">[email&#160;protected]</span></a></li>
           <li><a href="#contact">Book a Session</a></li>
           <li><a href="https://nomad.wedding/about-us" target="_blank" rel="noopener">About the Team</a></li>
         </ul>
@@ -1673,7 +1797,7 @@ footer {
 </footer>
 
 <!-- ─── SCRIPTS ───────────────────────────────────────────────── -->
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 (function() {
 
   /* Enable reveal animations only when JS is confirmed running */
@@ -1768,6 +1892,49 @@ footer {
         ticking = true;
       }
     }, { passive: true });
+  }
+
+  /* Mobile drawer with focus trap */
+  var hamburger = document.getElementById('hamburger');
+  var drawer = document.getElementById('mobile-drawer');
+  if (hamburger && drawer) {
+    var focusable = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+    function openDrawer() {
+      drawer.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      drawer.setAttribute('aria-hidden', 'false');
+      var first = drawer.querySelectorAll(focusable)[0];
+      if (first) first.focus();
+    }
+
+    function closeDrawer() {
+      drawer.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      drawer.setAttribute('aria-hidden', 'true');
+      hamburger.focus();
+    }
+
+    hamburger.addEventListener('click', function() {
+      drawer.classList.contains('open') ? closeDrawer() : openDrawer();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && drawer.classList.contains('open')) {
+        closeDrawer();
+      }
+      if (e.key === 'Tab' && drawer.classList.contains('open')) {
+        var items = Array.from(drawer.querySelectorAll(focusable));
+        if (!items.length) return;
+        var first = items[0];
+        var last = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault(); last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault(); first.focus();
+        }
+      }
+    });
   }
 
 })();
